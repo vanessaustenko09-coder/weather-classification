@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 
 @st.cache_resource
 def load_model():
-    df = pd.read_csv('data/weather_type_classification.csv')
+    df = pd.read_csv('weather_classification_data.csv')
     le_cloud = LabelEncoder()
     le_season = LabelEncoder()
     le_location = LabelEncoder()
